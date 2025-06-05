@@ -637,8 +637,6 @@ plot(roc_curve,
      ylab = "Sensitivitet (True Positive Rate)",
      asp = 1)
 
-abline(a = 0, b = 1, col = "gray", lty = 2)
-
 auc_value <- auc(roc_curve)
 text(0.6, 0.2, paste("AUC =", round(auc_value, 2)), col = "blue", cex = 1.2)
 points(0, 1, col = "red", pch = 19, cex = 1.5)
